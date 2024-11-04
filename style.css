@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --colorOne: #c865e0;
+    --colorTwo: #1c6d9c;
+    --colorThree: #9a1188;
+    --colorFour: #132028;
+    --colorFive : #e6edf1;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    /*position: fixed;*/
+    /*z-index: 100;*/
+}
+
+.container__header{
+    max-width: 1200px;
+    /*height: 200%;*/
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo{
+    display: flex;
+    /*align-items: center; */
+    position: relative;
+    z-index: 1;
+}
+.logo img{
+    width: 100px;
+}
+.Menu{
+    display: flex;
+    align-items: flex-start;
+}
+.Menu nav{
+    margin: 0px 20px;
+    display: flex;
+}
+/*Quitar los puntos de las opciones*/
+.Menu nav ul li{
+    list-style: none;   
+    margin: 10px 16px; 
+}
+/*menu al lado del otro*/
+.Menu nav ul{
+    display: flex;
+    margin: 20px;
+}
+.Menu nav ul li a{
+    color: var(--colorFour);
+    font-size: 16px;/*variable*/
+    position: relative;
+}
+
+.Menu nav ul li a:hover{
+    color: var(--colorOne);
+}
+
+.boton__cotizar{
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid var(--colorThree);
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 20px 20px;
+    transition: all 300ms;
+}
+.boton__cotizar:hover{
+    color: azure;
+    background-color: var(--colorThree) ;
+}
+.Menu .SocialMedia{
+    margin: 10px 10px;
+}
+.Menu .SocialMedia a{
+    margin: 0px 10px;
+}
+.Menu.SocialMedia img{
+    width: 20px;
+}
+
+/* Portada*/
+.container__cover{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--colorOne);
+}
+.cover{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+.text_cover h1{
+    font-size: 50px;
+    color: #132028;
+}
+.text_cover p{
+   /* font-size: fantasy;*/
+   margin-top: 40px;
+   color:azure;
+}
+.boton__text{
+    display: block;
+    width: 150px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 500;
+    background-color: aliceblue;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.boton__text{
+    background-color:blueviolet;
+    border: 2px solid var(--colorFive);
+    color:aliceblue;
+}
+
+.img__cover{
+    width: 100;
+}
+.img__cover img{
+    width: 500px;
+}

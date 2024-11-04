@@ -1,0 +1,51 @@
+/* Estilos gen cards*/
+.container__trust {
+    padding-top: 100px;
+}
+.container__trust{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 20px;
+}
+.text__card-primary{
+    max-width: 800px;
+    margin: auto;
+}
+.text__card-primary p{
+    color: #9a1188;
+    letter-spacing: 4px;
+    /*font-size:*/
+    font-weight: 500
+}
+.text__card-primary h1{
+    /*font-size: large;*/
+    font-weight: 600;
+    color:aqua;
+}
+.cajaCartaUno img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+}
+.cajaCartaUno{
+    max-width: 300px;
+    padding: 20px 40px;
+    border: 1px solid var(--colorThree);
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+}
+.cajaCartaUno:hover{
+    border: 1px solid var(--colorTwo);
+    box-shadow: #132028;
+}
+.cajaCartaUno h2{
+    /*font-size: */
+    margin-top: 40px;
+    font-weight: 500px;
+}
+.cajaCartaUno p{
+    margin-top: 20px;
+}
