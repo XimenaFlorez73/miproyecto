@@ -12,33 +12,21 @@
                 <a href="#"></a>
                 <img src="img/Huellitas.png"> 
             </div>
-
-            <div class="Menu">
+            <button id="abrir" class="abrirMenu"><img src="img/menu.png" width ="30" height="30"></button>
+            <div class="Menu" id="menu">
                 <nav>
+                    <button class="cerrarMenu" id="cerrar"><img src="img/equis.png" width="40" height="40"></button>
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#"></a>Sobre</li>
-                        <li><a href="#"></a>Servicios</li>
-                        <li><a href="#"></a>Obras</li>
-                        <li><a href="#"></a>Contacto</li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Veterinaria</a></li>
+                        <li><a href="#">Adopción</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="boton__cotizar">Cotizar</a>
-                <div class="SocialMedia">
-                    <a href="#">
-                        <img src="img/Face.png" width="50" height="50">
-                    </a>
-                    <a href="#">
-                        <img src="img/Insta.png" width="50" height="50">
-                    </a>
-                    <a href="#">
-                        <img src="img/Whats.png" width="50" height="50">
-                    </a>
-                    <a href="#">
-                        <img src="img/X.png" width="50" height="50">
-                    </a>
-                </div>
+                <a href="#" class="boton__cotizar">Iniciar sesión</a>
             </div>
+            <script src="script.js"></script>
         </div>
     </header>
 
@@ -49,38 +37,36 @@
                 <section class="Text__cover">
                     <h1>Para tus mascotas</h1>
                     <p>Explicación de nuetra tienda :3</p>
-                    <a href="#" class="Boton__text-cover boton__text">Empezar</a>
+                    <a href="#" class="Boton__text-cover boton__text">Registrarse</a>
                 </section>
                 <section class="Imagen__cover">
-                    <img src="img/Perro.png" alt="">
+                    <img src="img/Perro.png" width="400" height="450">
                 </section>
             </div>
         </div>
         <!--Generador de confianza-->
-        <div class="container__trust container__card-primary">
-            <div class="trust card__primary">
-                <div class="text__trust text__card-primary"></div>
-                <p>Nuestra Tienda Ofrece Confianza</p>
-                <h1>Encuentra con nosotros tus productos más usados</h1>
-            </div>
-            <div class="container__trust contenedorCajaCartaUno">
-                <div class="card__trust cajaCartaUno">
+        <div class="container__trust">
+            <p>Nuestra Tienda Ofrece Confianza</p>
+            <h1>Encuentra con nosotros tus productos más usados</h1>
+            <div class="contenedor__cajaCartaUno">
+                <div class="cajaCartaUno">
                     <img src="img/perro3.png" width="200" height="250">
                     <h2>Tienda</h2>
                     <p>Juguetes, Comida</p>
                 </div>
-                <div class="card__trust cajaCartaUno">
+                <div class="cajaCartaUno">
                     <img src="img/perro2.png" width="200" height="200">
                     <h2>Veterinarias</h2>
                     <p>Consultas, Medicamentos</p>
                 </div>
-                <div class="card__trust cajaCartaUno">
+                <div class="cajaCartaUno">
                     <img src="img/perro4.png" width="150" height="250">
                     <h2>Adopción</h2>
                     <p>Perros, Gatos</p>
                 </div>
             </div>
         </div>
+        
     </main>
 </body>
 </html>
