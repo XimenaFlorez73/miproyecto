@@ -136,16 +136,17 @@ header{
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background-color: rgb(71, 123, 169);
+    background-color: white;
     border-radius: 8px;
-    border: 2px solid transparent;
+    border: 2px solid rgb(30, 54, 38);
     cursor: pointer;
     transition: all 300ms;
+    color: black;
 }
-.boton__text{
-    background-color:blueviolet;
-    border: 2px solid var(--colorFive);
-    color:aliceblue;
+.boton__text:hover{
+    background-color:white;
+    border: 2px solid rgb(103, 202, 131);
+    color:rgba(3, 67, 30, 0.951);
 }
 
 .Imagen__cover{
@@ -227,13 +228,13 @@ header{
     .Menu {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: start;
         gap: 1rem;
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        width: 60%;
+        width: 50%;/**/
         background-color: rgb(34, 56, 57);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -247,16 +248,26 @@ header{
     .Menu.visible {
         opacity: 1;
         visibility: visible;
+        padding: 20px;
+        padding-top: 40px;
     }
-
-    /* Asegurar que los enlaces del menú tengan el z-index adecuado */
+    .boton__cotizar{
+        margin: 15px;
+        margin-left: 30px;
+        padding: 6px;
+        font-size: 15px;
+        border: 2px solid white;
+        color:rgb(249, 255, 255);
+    }
+    .boton__cotizar:hover{
+        color: black;
+        background-color: white ;
+    }
     .Menu nav ul li a {
         color: rgb(255, 255, 255);
         font-size: 16px;
         position: relative;
-        z-index: 4; /* Asegura que esté por encima del fondo del menú */
-    
-
+        z-index: 4; 
         }
         
         .Menu nav ul {
