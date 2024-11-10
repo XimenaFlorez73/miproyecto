@@ -10,8 +10,8 @@ cerrar.addEventListener("click", () => {
     menu.classList.remove("visible");
 });
 
-let signUp = document.getElementById("signUp");
 let signIp = document.getElementById("signIn");
+let signUp = document.getElementById("signUp");
 let nameInput = document.getElementById("nameInput");
 let title = document.getElementById("title");
 

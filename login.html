@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia sesión</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login">
-        <div class="form-login">
-            <h1 id="titulo">Registro</h1>
-            <form>
-                <div class="input-group" id="nameInput">
-                    <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Nombre">
-                    </div>
-                    
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Correo">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock"></i>
+    <div class="container">
+        <div class="informacion">
+            <div class="info-registrar">
+                <h2>Bienvenido</h2>
+                <p>Unete a nuestra comunidad. Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="signIn">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-informacion-childs">
+                <h2>Crear cuenta</h2>
+                <p>Usa tu email para registrarte</p>
+                <form class="form">
+                    <label>
+                        <img src="img/user.png" width="30" height="30">
+                        <input type="text" placeholder="Nombre Completo">
+                    </label>
+                    <label>
+                        <img src="img/email.png" width="30" height="30">
+                        <input type="email" placeholder="Correo electronico">
+                    </label>
+                    <label>
+                        <img src="img/contraseña.png" width="30" height="30">
                         <input type="password" placeholder="Contraseña">
-                    </div>
-                    <p>Olvidaste tu contraseña <a href="#">click aquí</a></p>
-                </div>
-                <div class="boton-field">
-                    <button id="signup" type="button">Registro</button>
-                    <button id="signin" type="button" class="disable">Login</button>
-                </div>
-            </form>
+                    </label>
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Formulario Registro-->
+
+
+    <div class="container hide">
+        <div class="informacion">
+            <div class="info-registrar">
+                <h2>¿Ya te has registrado?</h2>
+                <p>Registrate con tus datos</p>
+                <input type="button" value="Registrarse" id="signUp">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-informacion-childs">
+                <h2>Iniciar Sesion</h2>
+                <p>Ingresa con tu cuenta</p>
+                <form class="form">
+                    <label>
+                        <img src="img/email.png" width="30" height="30">
+                        <input type="email" placeholder="Correo electronico">
+                    </label>
+                    <label>
+                        <img src="img/contraseña.png" width="30" height="30">
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </div>
         </div>
     </div>
 </body>
