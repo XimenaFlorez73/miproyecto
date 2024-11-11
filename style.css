@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -190,6 +191,64 @@ header{
     transform: rotate(-45deg) translate(8px, -13px);
 }
 
+/*------------------------------------------------------------------------------------------------------*/
+/* Estilos para la sección de reseñas */
+#reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#reviews h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#reviewForm label {
+    font-weight: bold;
+}
+
+#reviewForm input, #reviewForm textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#reviewForm button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reviewsContainer {
+    margin-top: 20px;
+}
+
+.review-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.review-item p {
+    margin: 5px 0;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 480px) 
 {
     .abrirMenu,
@@ -241,7 +300,7 @@ header{
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease;
-        z-index: 3; /* Asegura que esté por encima de otros elementos */
+        z-index: 3; 
     }
 
     /* Ajuste para el menú visible */
@@ -277,5 +336,24 @@ header{
         }
         .Menu nav ul li a {
             color: rgb(255, 255, 255);
-    }
+        }
+        .container__cover{
+            display: flex;
+            max-width: auto;
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+        
+        .cover{
+            max-width: 20px;
+            margin: 10px;
+            margin-top: 30px;
+            align-items: center;
+            padding: 20px 20px;
+            font-size: 12px;
+        }
+        .Imagen__cover img{
+            max-width: 320px;
+        }
+
 }

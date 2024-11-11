@@ -24,9 +24,8 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="boton__cotizar">Iniciar sesión</a>
+                <a href="login.html" class="boton__cotizar">Iniciar sesión</a>
             </div>
-            <script src="script.js"></script>
         </div>
     </header>
 
@@ -37,7 +36,7 @@
                 <section class="Text__cover">
                     <h1>Para tus mascotas</h1>
                     <p>Explicación de nuetra tienda :3</p>
-                    <a href="#" class="Boton__text-cover boton__text">Registrarse</a>
+                    <a href="login.html" class="Boton__text-cover boton__text">Registrarse</a>
                 </section>
                 <section class="Imagen__cover">
                     <img src="img/Perro.png" width="400" height="450">
@@ -68,5 +67,26 @@
         </div>
         
     </main>
+    <!-- Sección de Reseñas -->
+    <section id="reviews">
+        <h2>Reseñas de Nuestros Usuarios</h2>
+
+        <!-- Formulario para dejar una reseña -->
+        <form id="reviewForm">
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="reviewText">Tu Reseña:</label>
+            <textarea id="reviewText" name="reviewText" rows="4" required></textarea>
+
+            <button type="submit">Enviar Reseña</button>
+        </form>
+
+        <!-- Contenedor de reseñas -->
+        <div id="reviewsContainer">
+            <!-- Aquí se insertarán las reseñas desde JavaScript -->
+        </div>
+    </section>
+<script src="script.js"></script>
 </body>
 </html>

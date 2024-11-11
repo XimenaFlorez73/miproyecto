@@ -10,21 +10,31 @@ cerrar.addEventListener("click", () => {
     menu.classList.remove("visible");
 });
 
-let signIp = document.getElementById("signIn");
-let signUp = document.getElementById("signUp");
-let nameInput = document.getElementById("nameInput");
-let title = document.getElementById("title");
+/*-----------------------------------------------------------------*/
 
-signIp.onclick = function(){
-    nameInput.login.maxHeight = "0";
-    title.innerHTML = "login";
-    signUp.classList.add("disable");
-    signIp.classList.remove("disable");
-}
+// Selecciona el formulario y el contenedor de reseñas
+const reviewForm = document.getElementById('reviewForm');
+const reviewsContainer = document.getElementById('reviewsContainer');
 
-signUp.onclick = function(){
-    nameInput.login.maxHeight = "60px";
-    title.innerHTML = "Registro";
-    signUp.classList.remove("disable");
-    signIp.classList.add("disable");
-}
+// Escucha el evento de envío del formulario
+reviewForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Obtiene el nombre y la reseña del usuario
+    const username = document.getElementById('username').value;
+    const reviewText = document.getElementById('reviewText').value;
+
+    // Crea un elemento HTML para la nueva reseña
+    const reviewItem = document.createElement('div');
+    reviewItem.classList.add('review-item');
+    reviewItem.innerHTML = `
+        <h3>${username}</h3>
+        <p>${reviewText}</p>
+    `;
+
+    // Añade la reseña al contenedor
+    reviewsContainer.appendChild(reviewItem);
+
+    // Limpia el formulario después de enviar
+    reviewForm.reset();
+});

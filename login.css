@@ -119,7 +119,8 @@ body{
 }
 
 .hide{
-    display: none;
+    position: absolute;
+    transform: translateY(-200%);
 }
 /*Responsive form*/
 @media screen and (max-width:480px){

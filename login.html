@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container registro">
         <div class="informacion">
             <div class="info-registrar">
                 <h2>Bienvenido</h2>
-                <p>Unete a nuestra comunidad. Inicia Sesión con tus datos</p>
+                <p>¿Ya estás registrado? Ingresa a tu cuenta</p>
                 <input type="button" value="Iniciar Sesión" id="signIn">
             </div>
         </div>
@@ -32,7 +32,7 @@
                         <img src="img/contraseña.png" width="30" height="30">
                         <input type="password" placeholder="Contraseña">
                     </label>
-                    <input type="submit" value="Registrarse">
+                    <input  type="submit" value="Registrarse" id="nuevoUsuario">
                 </form>
             </div>
         </div>
@@ -41,7 +41,7 @@
 <!-- Formulario Registro-->
 
 
-    <div class="container hide">
+    <div class="container login hide">
         <div class="informacion">
             <div class="info-registrar">
                 <h2>¿Ya te has registrado?</h2>
@@ -62,10 +62,11 @@
                         <img src="img/contraseña.png" width="30" height="30">
                         <input type="password" placeholder="Contraseña">
                     </label>
-                    <input type="submit" value="Iniciar sesión">
+                    <input type="submit" value="Iniciar sesión" id="iniciarSesion">
                 </form>
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
