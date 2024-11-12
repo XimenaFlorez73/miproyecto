@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Nuevo proyecto</title>
+    <title>Huellitas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Información.css">
 </head>
 <body>
+
+    <!--************************* Menú ******************************-->
+
     <header>
         <div class="container__header">
             <div class="logo">
@@ -28,14 +31,17 @@
             </div>
         </div>
     </header>
+    
 
+     
+    <!--******************************** Inicio Portada (Banner) *****************************-->
+    
     <main>
-        <!--Inico de la web y portada-->
         <div class="container__cover div__offset">
             <div class="cover">
                 <section class="Text__cover">
-                    <h1>Para tus mascotas</h1>
-                    <p>Explicación de nuetra tienda :3</p>
+                    <h1>!BIENVENIDO¡</h1>
+                    <p>En nuestra veterinaria, estamos comprometidos con la salud y el bienestar de las mascotas, ofreciendo un espacio seguro, profesional y lleno de cariño para ellos. Explora nuestros servicios, productos y el apoyo de nuestro equipo de expertos</p>
                     <a href="login.html" class="Boton__text-cover boton__text">Registrarse</a>
                 </section>
                 <section class="Imagen__cover">
@@ -43,10 +49,33 @@
                 </section>
             </div>
         </div>
-        <!--Generador de confianza-->
+    </main>
+
+
+
+    <!--***************************** Slider ***************************-->
+    <div class="containerCarrusel">
+        <div class="carruseles" id="slider">
+            <section class="sliderSection">
+                <img src="img/imagen1.jpg" width="100" height="100">
+            </section>
+            <section class="sliderSection">
+                <img src="img/imagen2.jpg">
+            </section>
+            <section class="sliderSection">
+                <img src="img/imagen3.jpg">
+            </section>
+        </div>
+        <div class="btnLeft"><</div>
+        <div class="btnRight">></div>
+    </div>
+        
+   
+        <!--************************ Cartas de servicios *************************-->
+    <main>
         <div class="container__trust">
-            <p>Nuestra Tienda Ofrece Confianza</p>
-            <h1>Encuentra con nosotros tus productos más usados</h1>
+            <h1>Nuestra Tienda Ofrece Confianza</h1>
+            <p>Encuentra con nosotros tus productos más usados</p>
             <div class="contenedor__cajaCartaUno">
                 <div class="cajaCartaUno">
                     <img src="img/perro3.png" width="200" height="250">
@@ -54,24 +83,26 @@
                     <p>Juguetes, Comida</p>
                 </div>
                 <div class="cajaCartaUno">
-                    <img src="img/perro2.png" width="200" height="200">
+                    <img src="img/perro2.png" width="250" height="250">
                     <h2>Veterinarias</h2>
                     <p>Consultas, Medicamentos</p>
                 </div>
                 <div class="cajaCartaUno">
-                    <img src="img/perro4.png" width="150" height="250">
+                    <img src="img/perro4.png" width="170" height="250">
                     <h2>Adopción</h2>
                     <p>Perros, Gatos</p>
                 </div>
             </div>
-        </div>
-        
+        </div>  
     </main>
-    <!-- Sección de Reseñas -->
+
+
+    <!--******************** Sección de Reseñas******************* -->
+
     <h2 class="reseña">Reseñas de Nuestros Usuarios</h2>
-    <section id="reviews">
+    <section class="reviews" id="reviews">
         <!-- Formulario para dejar una reseña -->
-        <form id="reviewForm">
+        <form class="reseñaForm" id="reviewForm">
             <label for="username">Nombre:</label>
             <input type="text" id="username" name="username" required>
 
@@ -83,9 +114,13 @@
 
         <!-- Contenedor de reseñas -->
         <div id="reviewsContainer">
-            <!-- Aquí se insertarán las reseñas desde JavaScript -->
+            <!-- Aquí se insertan las reseñas desde JavaScript -->
         </div>
     </section>
+
+
+    <!--******************************** Pie de Página*****************************-->
+
     <footer class="piePagina">
         <div class="grupo1">
             <div class="box">
@@ -123,6 +158,10 @@
             <small>&copy; 2024 <b>Ximena</b> - Todos los derechos Reservados.</small>
         </div>    
     </footer>
-<script src="script.js"></script>
+
+    <!--****************************************************************************************-->
+
+    <script src="inicio.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
