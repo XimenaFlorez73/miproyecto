@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+@import 'carrusel.css';
+@import 'piePag.css';
+@import 'reseñas.css';
+@import 'portada.css';
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -9,20 +13,13 @@
 }
 body{
     font-family: "Poppins", sans-serif;
-}
-:root{
-    --colorOne: #c865e0;
-    --colorTwo: #1c6d9c;
-    --colorThree: #9a1188;
-    --colorFour: #132028;
-    --colorFive : #e6edf1;
+    width: 100%;
+    height: 100%;
 }
 
 header{
     width: 100%;
     height: 20%;
-    /*position: fixed;*/
-    /*z-index: 100;*/
 }
 
 .container__header{
@@ -37,7 +34,6 @@ header{
 
 .logo{
     display: flex;
-    /*align-items: center; */
     position: relative;
     z-index: 1;
 }
@@ -70,13 +66,13 @@ header{
     margin: 20px;
 }
 .Menu nav ul li a{
-    color: var(--colorFour);
-    font-size: 16px;/*variable*/
+    color:rgb(1, 45, 26);
+    font-size: 16px;
     position: relative;
 }
 
 .Menu nav ul li a:hover{
-    color: var(--colorOne);
+    color:rgb(254, 160, 235);
 }
 .boton__cotizar{
     display: block;
@@ -90,77 +86,6 @@ header{
 .boton__cotizar:hover{
     color: rgb(251, 253, 253);
     background-color:rgb(254, 160, 235) ;
-}
-.Menu .SocialMedia{
-    margin: 10px 10px;
-}
-.Menu .SocialMedia a{
-    margin: 0px 10px;
-}
-.Menu.SocialMedia img{
-    width: 10px;
-}
-
-/* Portada*/
-.container__cover{
-    padding-top: 5px;
-    padding-bottom: 10px;
-    background: #62c5a7;/*Color portada*/
-    border-radius: 20px;
-    
-}
-
-.cover{
-    max-width: 700px;
-    margin: auto;
-    margin-left: 250px;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
-.Text__cover{
-    width:100%;
-    padding-right: 10px;
-}
-.Text__cover h1{
-    font-size: 50px;
-    color: #132028;
-    margin: 10px;
-}
-.Text__cover p{
-   /* font-size: fantasy;*/
-   margin-top: 20px;
-   color:azure;
-}
-.boton__text{
-    display: block;
-    width: 150px;
-    margin-top: 40px;
-    padding: 10px 20px;
-    text-align: center;
-    font-weight: 500;
-    background-color: white;
-    border-radius: 8px;
-    border: 2px solid rgb(30, 54, 38);
-    cursor: pointer;
-    transition: all 300ms;
-    color: black;
-}
-.boton__text:hover{
-    background-color:white;
-    border: 2px solid rgb(103, 202, 131);
-    color:rgba(3, 67, 30, 0.951);
-}
-
-.Imagen__cover{
-    width: 100px;
-    padding-left: 60px;
-}
-
-
-.image__cover img{
-    width: 550px;
 }
 /*menú hamburguesa*/
 .bars__menu{
@@ -195,133 +120,14 @@ header{
     transform: rotate(-45deg) translate(8px, -13px);
 }
 
-/*------------------------------------------------------------------------------------------------------*/
-/* Estilos para la sección de reseñas */
-.reviews {
-    padding: 20px;
-    background-color: #41566b;
-    border: 2px solid rgb(10, 32, 17);
-    font-family: 'Merriweather', sans-serif;
-}
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-family: 'Lora', sans-serif;
-}
 
-.reseñaForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-.reseñaForm label {
-    display: flex;
-    font-weight: bold;
-    margin: 10px;
-    justify-content: center;
-}
 
-.reseña{
-    text-align: center;
-}
-.reseñaForm input, .reseñaForm textarea {
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-}
 
-.reseñaForm button {
-    padding: 10px;
-    background-color: #092d3c;
-    color: rgb(255, 255, 255);
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: "Signika Negativo", sans-serif;
-}
+/*---------------------------------      Carrusel      -----------------------------------------------------------*/
 
-#reviewsContainer {
-    margin-top: 20px;
-}
-.review-item {
-    border-bottom: 4px solid #ddd;
-    padding: 10px 0;
-}
 
-.review-item h3 {
-    font-size: 18px;
-    margin: 0px;
-    font-family: "Lora", sans-serif;
-}
-
-.review-item p {
-    padding: 5px;
-    border: 1px solid #000000;
-    background-color: white;
-    font-size: 12px;
-    font-family: 'Signika Negativo', sans-serif;
-}
-
-/*------------------------------------------------------------------------------------------------------*/
-/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
-.piePagina{
-    width: 100%;
-    background-color: #132028;
-}
-.piePagina .grupo1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-.piePagina .grupo1 .box figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.piePagina .grupo1 .box figure img{
-    width: 150px;
-}
-.piePagina .grupo1 .box h2{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-.piePagina .grupo1 .box p{
-    color: white;
-    margin-bottom: 10px;
-}
-/*-----------------------------*/
-.piePagina .grupo1 .redSocial a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    margin-right: 10px;
-    background-color: transparent;
-    text-align: center;
-}
-
-.piePagina .grupo2{
-    background-color: #1a2c37;
-    padding: 15px 10px;
-    text-align: center;
-    color: white;
-}
-.piePagina .grupo2 small{
-    font-size: 15px;
-}
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxx Carrusel xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 .containerCarrusel {
     position: relative;
@@ -360,7 +166,6 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     color: #c2ced5;
-    /*transform: translate(0, -50%);*/
     transition: 1s ease;
     user-select: none;
 }
@@ -377,8 +182,19 @@ h2 {
 }
 
 
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
 @media screen and (max-width: 480px) 
 {
+
     .abrirMenu,
     .cerrarMenu {
         display: block;
@@ -455,38 +271,72 @@ h2 {
         font-size: 16px;
         position: relative;
         z-index: 4; 
-        }
+    }
         
-        .Menu nav ul {
-            flex-direction: column;
-            align-items: flex-end;
-            padding: 0;
-        }
-        .Menu nav ul li a {
-            color: rgb(255, 255, 255);
-        }
-        .container__cover{
-            display: flex;
-            max-width: auto;
-            padding-top: 20px;
-            padding-bottom: 5px;
-        }
-        
-        .cover{
-            max-width: 20px;
-            margin: 10px;
-            margin-top: 30px;
-            align-items: center;
-            padding: 20px 20px;
-            font-size: 12px;
-        }
-        .Imagen__cover img{
-            max-width: 320px;
-        }
-        .piePagina .grupo1{
-            width: 80%;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 30px;
-            padding: 5px 0px;
-        }
+    .Menu nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+    }
+    .Menu nav ul li a {
+        color: rgb(255, 255, 255);
+    }
+    .container__cover{
+        display: flex;
+        max-width: auto;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+    .Text__cover {
+        font-style:oblique;
+        text-align: center;
+        padding: 0;
+        height: 50%;
+        background-color: rgb(111, 156, 144);
+        border-radius: 10px;
+     }
+    .Text__cover h1{
+        padding-top: 20px;
+    }
+    .Text__cover p{
+        padding: 10px;
+    }
+    .boton__text{
+        display: block; 
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .cover{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+    }
+    .Imagen__cover{
+        padding: 0;
+        margin: 3px;
+    }
+    .Imagen__cover img{
+        margin-top: 10px;
+        padding-left: 70px;
+        height: 370px;
+    }
+    .containerCarrusel {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        box-shadow: none; 
+    }
+
+    .sliderSection img {
+        object-fit: contain;
+    }
+
+    .piePagina .grupo1{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 5px 0px;
+    }
 }

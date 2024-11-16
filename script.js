@@ -49,6 +49,9 @@ const sliderSection = document.querySelectorAll(".sliderSection");
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnLright.addEventListener("click", e => moveToRight())
+setInterval(()=> {
+    moveToRight()
+}, 3000);
 
 let operacion = 0;
 let widthImg = 100 / sliderSection.length;
