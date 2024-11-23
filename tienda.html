@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Huellitas&Garritas</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header class="header">
+
+        <!--********  Div principal  ********-->
+        <div class="menuTienda container">
+                <!--************************* Menú ******************************-->
+            <div class="container__header">
+                <div class="logo">
+                    <a href="#"></a>
+                    <img src="img/Huellitas.png"> 
+                </div>
+                <button id="abrir" class="abrirMenu"><img src="img/menu.png" width ="30" height="30"></button>
+                <div class="Menu" id="menu">
+                    <nav>
+                        <button class="cerrarMenu" id="cerrar"><img src="img/equis.png" width="40" height="40"></button>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="#">Veterinaria</a></li>
+                            <li><a href="#">Adopción</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <a href="login.html" class="boton__cotizar">Iniciar sesión</a>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="img/carrito.png" id="imgCarrito" width="50" height="50">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
+        <!--*******************************Cierre div principal***************************************-->
+    
+        <main>
+            <div class="container__cover div__offset">
+                <div class="cover">
+                    <section class="Text__cover">
+                        <h1>Los mejores productos y artículos para tu mascota</h1>
+                    </section>
+                    <section class="Imagen__cover">
+                        <img src="img/tienda2.jpg" width="400" height="400">
+                    </section>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <!--**************************** fin portada ***********************************-->
+
+    <section class="ofter contenedor">
+        <div class="ofert1">
+            <div class="ofertImg">
+                <img src="img/articulos.jpg">
+            </div>
+            <div class="ofertTxt">
+                <h3>Para el hogar</h3>
+                <a href="#" class="btn2">Información</a>
+            </div>
+        </div>
+        <div class="ofert1">
+            <div class="ofertImg">
+                <img src="img/cuido.jpg">
+            </div>
+            <div class="ofertTxt">
+                <h3>Alimentos</h3>
+                <a href="#" class="btn2">Información</a>
+            </div>
+        </div>
+        <div class="ofert1">
+            <div class="ofertImg">
+                <img src="img/collares.jpg" alt="">
+            </div>
+            <div class="ofertTxt">
+                <h3>Juguetes</h3>
+                <a href="#" class="btn2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="productos container" id="lista1">
+        <h2>Productos</h2>
+        <div class="productosContenedor">
+            <div class="producto">
+                <img src="img/comeder.jpg">
+                <div class="productoTxt">
+                    <h3>Comedor</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$10.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/correa.jpg">
+                <div class="productoTxt">
+                    <h3>Correa de paseo</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$15.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/cama.jpg">
+                <div class="productoTxt">
+                    <h3>Cama grande perros y gatos</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$40.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/collarPerro.jpg">
+                <div class="productoTxt">
+                    <h3>Collar Perro</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/kitLimpieza.jpg">
+                <div class="productoTxt">
+                    <h3>Kit de limpieza</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$20.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/kitPaseo.jpg">
+                <div class="productoTxt">
+                    <h3>Kit de paseo</h3>
+                    <p>calidad premium</p>
+                    <p class="precio">$35.000</p>
+                    <a href="#" class="agregar carrito btn2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--******************************** Pie de Página*****************************-->
+
+    <footer class="piePagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/Huellitas.png">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Siguenos en nuestras redes sociales.</p>
+                <p>Próximamente.</p>
+                <p> Gracias :)</p>
+            </div>
+            <div class="box">
+                <h2>Siguenos</h2>
+                <div class="redSocial">
+                    <a href="#">
+                        <img src="img/Face.png" width="50" height="50">
+                    </a>
+                    <a href="#">
+                        <img src="img/Insta.png" width="50" height="50">
+                    </a>
+                    <a href="#">
+                        <img src="img/Whats.png" width="45" height="45">
+                    </a>
+                    <a href="#">
+                        <img src="img/X.png" width="45" height="45">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2024 <b>Ximena</b> - Todos los derechos Reservados.</small>
+        </div>    
+    </footer>
+
+    <!--****************************************************************************************-->
+    
+    <script src="tienda.js"></script>
+</body>
+</html>

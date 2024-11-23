@@ -6,7 +6,7 @@
 @import 'portada.css';
 *{
     margin: 0px;
-    padding: 0;
+    /*padding: 0;*/
     box-sizing: border-box;
     text-decoration: none;
     
@@ -129,6 +129,10 @@ header{
 
 
 
+
+
+
+
 .containerCarrusel {
     position: relative;
     width: 900px;
@@ -199,14 +203,12 @@ header{
     .cerrarMenu {
         display: block;
         border: 0;
-        font-size: 1.25rem;
         background-color: transparent;
         cursor: pointer;
         position: absolute;
         top: 10px; /* Ajusta según lo necesites */
         right: 10px; /* Posicionado en la esquina derecha */
         padding: 0;
-        margin: 0;
     }
     .abrirMenu {
         color: black;

@@ -2,8 +2,8 @@
 .container__cover{
     padding-top: 5px;
     padding-bottom: 10px;
-    background: #8cb6aa; /*Color Portada*/
-    border-radius: 20px;
+    background-color: rgb(127, 155, 153); /*Color Portada*/
+    /*border-radius: 20px;*/
     
 }
 
@@ -55,6 +55,6 @@
 }
 
 
-.image__cover img{
+.Imagen__cover img{
     width: 550px;
 }
