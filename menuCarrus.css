@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
 @import 'carrusel.css';
-@import 'piePag.css';
+@import 'piepagina.css';
 @import 'reseñas.css';
 @import 'portada.css';
 *{
@@ -27,8 +27,7 @@ header{
     /*height: 200%;*/
     margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
 }
 
@@ -49,7 +48,7 @@ header{
 
 .Menu{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 .Menu nav{
     margin: 0px 20px;
@@ -129,10 +128,6 @@ header{
 
 
 
-
-
-
-
 .containerCarrusel {
     position: relative;
     width: 900px;
@@ -185,15 +180,7 @@ header{
     right: 20px;
 }
 
-
-
-
-
 /*--------------------------------------------------------------------------------------------*/
-
-
-
-
 
 
 @media screen and (max-width: 480px) 
@@ -265,16 +252,10 @@ header{
         color:rgb(249, 255, 255);
     }
     .boton__cotizar:hover{
-        color: black;
-        background-color: white ;
+        color: rgb(5, 22, 106);
+        background-color: rgb(21, 152, 89) ;
     }
-    .Menu nav ul li a {
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        position: relative;
-        z-index: 4; 
-    }
-        
+    
     .Menu nav ul {
         flex-direction: column;
         align-items: flex-end;
@@ -283,47 +264,7 @@ header{
     .Menu nav ul li a {
         color: rgb(255, 255, 255);
     }
-    .container__cover{
-        display: flex;
-        max-width: auto;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        background-color: white;
-    }
-    .Text__cover {
-        font-style:oblique;
-        text-align: center;
-        padding: 0;
-        height: 50%;
-        background-color: rgb(111, 156, 144);
-        border-radius: 10px;
-     }
-    .Text__cover h1{
-        padding-top: 20px;
-    }
-    .Text__cover p{
-        padding: 10px;
-    }
-    .boton__text{
-        display: block; 
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .cover{
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
 
-    }
-    .Imagen__cover{
-        padding: 0;
-        margin: 3px;
-    }
-    .Imagen__cover img{
-        margin-top: 10px;
-        padding-left: 70px;
-        height: 370px;
-    }
     .containerCarrusel {
         width: 100%;
         height: 300px;
